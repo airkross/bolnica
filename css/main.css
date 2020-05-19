@@ -656,7 +656,7 @@
 
 .doctors-cards {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .doctors-card {
@@ -664,16 +664,27 @@
     width: 100%;
     margin-bottom: 32px;
 }
+.doctors-card-img{
+    /* min-height: 412px; */
+}
 
 .doctors-card-img img {
     width: 100%;
 }
-
+.ml-28{
+    margin-left: 28px;
+}
+@media screen and (max-width: 767px){
+    .ml-28{
+        margin-left: 0;
+    }
+}
 .doctors-card-name {
     font-style: normal;
     font-weight: 900;
     font-size: 19px;
     line-height: 26px;
+    min-height: 52px;
     color: #010041;
     margin-top: 18px;
 }
@@ -683,6 +694,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    min-height: 48px;
     letter-spacing: 0.15px;
     color: #4B4B4B;
 }
